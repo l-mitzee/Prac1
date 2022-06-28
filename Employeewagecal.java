@@ -9,15 +9,15 @@ public class Employeewagecal {
 		
 		
 		
-		double empcheck=(Math.floor(Math.random()*10)%3);
+		double empcheck=(Math.floor(Math.random()*10)%2);
 		
 		if (empcheck==full_time) {
 			emphrs=8;
-			System.out.println("Full time employee   " +emphrs);
+			System.out.println("Full time employee working hours== " +emphrs);
 		}
 		else {
 			emphrs=0;
-			System.out.println("Absent Employee   " +emphrs);
+			System.out.println("Absent Employee working hours==" +emphrs);
 		}
 		
 		
