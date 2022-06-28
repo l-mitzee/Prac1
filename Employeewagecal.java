@@ -2,17 +2,26 @@ package Empwage;
 
 public class Employeewagecal {
 	public static void main(String[] args) {
-		int Is_Present=1;
-		double empcheck = Math.floor(Math.random()*10)%2;
+		int full_time=1;
+		int emp_rate_per_hr=20;
+		int emphrs=0;
+		int empwage=0;
 		
-		if(empcheck==Is_Present) {
-			System.out.println("Present");
+		
+		
+		double empcheck=(Math.floor(Math.random()*10)%3);
+		
+		if (empcheck==full_time) {
+			emphrs=8;
+			System.out.println("Full time employee   " +emphrs);
 		}
-		else
-		{
-			System.out.println("Absent");
+		else {
+			emphrs=0;
+			System.out.println("Absent Employee   " +emphrs);
 		}
+		
+		
+		empwage= emp_rate_per_hr*emphrs;
+		System.out.println("Total wage== "+empwage);
 	}
-
-
 }
